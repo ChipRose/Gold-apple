@@ -195,6 +195,10 @@ h6 {
 .main-menu-link:hover {
   color: var(--x-red);
 }
+.main-menu-link:active {
+  border-bottom: 2px solid var(--x-black);
+	margin-bottom: -2px;
+}
 .main-menu-icon {
   fill: var(--x-black);
 }
@@ -241,6 +245,14 @@ h6 {
   background: var(--x-black);
   padding: 18px 109px;
   margin: 0 auto;
+}
+.main-button:hover{
+	box-shadow: 2px 2px 5px 2px var(--x-black30);
+}
+.main-button:active{
+	outline: 2px solid var(--x-black);
+	background: var(--x-white);
+	color: var(--x-black);
 }
 /* -------description------- */
 .about {
@@ -346,6 +358,10 @@ font-weight: 700;
 .card-button-buy:hover .button-buy-text{
 	color: var(--x-red);
 }
+.card-button-buy:active .button-buy-text{
+	opacity: 0.3;
+	color: var(--x-black);
+}
 .card-icon{
 	fill:var(--x-black)
 }
@@ -406,8 +422,11 @@ font-weight: 700;
 	margin: 0 auto;
 }
 .promo-button:hover{
-	color:var(--x-red);
-	outline: 2px solid var(--x-red-hover);
+	outline: 2px solid var(--x-black);
+}
+.promo-button:active{
+	background:var(--x-black);
+	color:var(--x-white);
 }
 .promo .promo-button{
 	margin-bottom: 18px;
@@ -426,6 +445,7 @@ font-weight: 700;
 	grid-template-rows: min-content;
 	grid-template-columns: repeat(15,40px);
 	justify-content: space-between;
+	padding: 55px 0 48px 0;
 }
 .social-link-list{
 	grid-row: 1/2;
@@ -439,13 +459,18 @@ font-weight: 700;
 	display: flex;
 }
 .social-link-item{
-	min-width: 17px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .social-icon{
 	fill:var(--x-white);
 }
-.social-icon:hover{
-	fill:var(--x-red-hover);
+.social-link-item:hover{
+	border: 2px solid var(--x-white);
 }
 @media (max-width: 768px) {
 }
