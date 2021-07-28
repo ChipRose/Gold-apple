@@ -470,7 +470,10 @@ font-weight: 700;
 	fill:var(--x-white);
 }
 .social-link-item:hover{
-	border: 2px solid var(--x-white);
+	background: var(--x-white);
+}
+.social-link-item:hover .social-icon{
+	fill:var(--x-black);
 }
 @media (max-width: 768px) {
 }
