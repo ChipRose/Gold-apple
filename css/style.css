@@ -198,6 +198,7 @@ h6 {
 .main-menu-link {
   display: block;
   padding: 5px 0 5px 0;
+	color: var(--x-black);
 }
 .main-menu-link:hover {
   color: var(--x-red);
